@@ -47,6 +47,73 @@ alert('Yes, I love eating cake!');
 }
 
 //let userBye = prompt('Thanks for the visiting my Website.
-alert('Thanks for the visiting my Website ' + userName); 
+//alert('Thanks for the visiting my Website ' + userName); 
+
+
+
+
+
+  let userAnswer = parseInt('Please Enter a Number 1-100'));
+  let correctAnswer = 90;
+  let attemps = 3;
+
+
+  for (let i = 0; i < attemps; i++){
+      while(userAnswer < 1 || userAnswer > 100){
+          userAnswer = prompt('Try Again! A number 1-100');
+
+      }
+      if(userAnswer == correctAnswer){
+          alert('Correct!');
+          document.write("Winner!");
+          break;
+      }else if (userAnswer > correctAnswer){
+          userAnswer = prompt('Too high! Please try again');
+
+      }else if (userAnswer < correctAnswer){
+          userAnswer = prompt('Too low! Please try again!');
+      
+      }
+      if(i == 3){
+          alert('The correct answer was ' + correctAnswer);
+          document.write("Game Loser")
+
+      }
+  }        
+     
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  alert('Thanks for the visiting my Website ' + userName); 
+
 
 

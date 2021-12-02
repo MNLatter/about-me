@@ -20,3 +20,25 @@ p {
   font-size: 3em;
 }
 
+h2 {
+text-align: left;
+font-style: bold;
+
+
+}
+
+ul {
+  text-align: left;
+  font-style: oblique;
+}
+
+h3 {
+text-align: right;
+font-style: bold;
+
+}
+
+ol {
+  text-align: right;
+  font-style: oblique;
+}
