@@ -2,22 +2,32 @@
 
 //console.log('Hello world');
 
-let userName = prompt ('What is your Name?')
-  alert('Welcome to Michael\'s About Me website ' + userName)
-let userCounter = 0
+function myUserName(){
+    let userName = prompt ('What is your Name?')
+    alert('Welcome to Michael\'s About Me website ' + userName)
+  let userCounter = 0
+}
+
+myUserName();
+
 
 
 
 // Question One yes is the answer
-let userAgeOne = prompt('Am I 25 years old?').toLocaleLowerCase();
 
-
-if (userAgeOne === 'yes' || userAgeOne === 'y'){
-//console.log('Yes, I am 25!');
-alert('Yes, I am 25!')
-userCounter++;
-
+function questionOne(){
+    let userAgeOne = prompt('Am I 25 years old?').toLocaleLowerCase();
+    
+    
+    if (userAgeOne === 'yes' || userAgeOne === 'y'){
+    //console.log('Yes, I am 25!');
+    alert('Yes, I am 25!')
+    userCounter++;
+    
+    }
 }
+questionOne();
+
 
 let userLocation = prompt('Do I live in Vancouver?').toLocaleLowerCase();
 
