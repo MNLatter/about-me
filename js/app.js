@@ -53,25 +53,25 @@ alert('Yes, I love eating cake!');
 
 
 
-  let userAnswer = parseInt('Please Enter a Number 1-100'));
-  let correctAnswer = 90;
-  let attemps = 3;
+  let userAnswer = parseInt(prompt ('Please Enter a Number 1-100'))
+  let correctAnswer = 90
+  let attemps = 3
 
 
   for (let i = 0; i < attemps; i++){
       while(userAnswer < 1 || userAnswer > 100){
-          userAnswer = prompt('Try Again! A number 1-100');
+          userAnswer = parseInt(prompt ('Try Again! A number 1-100'))
 
       }
-      if(userAnswer == correctAnswer){
+      if(userAnswer === correctAnswer){
           alert('Correct!');
           document.write("Winner!");
           break;
       }else if (userAnswer > correctAnswer){
-          userAnswer = prompt('Too high! Please try again');
+          userAnswer = parseInt(prompt ('Too high! Please try again'))
 
       }else if (userAnswer < correctAnswer){
-          userAnswer = prompt('Too low! Please try again!');
+          userAnswer = parseInt(prompt ('Too low! Please try again!'))
       
       }
       if(i == 3){
