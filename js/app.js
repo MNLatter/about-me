@@ -28,23 +28,28 @@ function questionOne(){
 }
 questionOne();
 
-
-let userLocation = prompt('Do I live in Vancouver?').toLocaleLowerCase();
-
-if (userLocation === 'yes' || 'y'){
-//console.log('Yes, I do live in Vancouver!');
-alert('Yes, I do live in Vancouver!');
-userCounter++;
-
+function questionTwo(){
+    let userLocation = prompt('Do I live in Vancouver?').toLocaleLowerCase();
+    
+    if (userLocation === 'yes' || 'y'){
+    //console.log('Yes, I do live in Vancouver!');
+    alert('Yes, I do live in Vancouver!');
+    userCounter++;
+    
+    }
 }
+questionTwo();
 
-let userVideoGame = prompt('Do I play Video Games?').toLocaleLowerCase();
-if (userVideoGame === 'yes' || userVideoGame === 'y'){
-//consol.log('yes, I do play Video Games!');
-  alert('Yes, I do play Video Games!');
-  userCounter++;
-
+function questionThree(){
+    let userVideoGame = prompt('Do I play Video Games?').toLocaleLowerCase();
+    if (userVideoGame === 'yes' || userVideoGame === 'y'){
+    //consol.log('yes, I do play Video Games!');
+      alert('Yes, I do play Video Games!');
+      userCounter++;
+    
+    }
 }
+questionThree();
 
 let userSoccer = prompt('Do I like to play Soccer?').toLocaleLowerCase();
 if (userSoccer === 'yes' || userSoccer === 'y'){
