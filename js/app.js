@@ -4,7 +4,7 @@
 
 let userName = prompt ('What is your Name?')
   alert('Welcome to Michael\'s About Me website ' + userName)
-
+let userCounter = 0
 
 
 
@@ -15,6 +15,7 @@ let userAgeOne = prompt('Am I 25 years old?').toLocaleLowerCase();
 if (userAgeOne === 'yes' || userAgeOne === 'y'){
 //console.log('Yes, I am 25!');
 alert('Yes, I am 25!')
+userCounter++;
 
 }
 
@@ -23,6 +24,7 @@ let userLocation = prompt('Do I live in Vancouver?').toLocaleLowerCase();
 if (userLocation === 'yes' || 'y'){
 //console.log('Yes, I do live in Vancouver!');
 alert('Yes, I do live in Vancouver!');
+userCounter++;
 
 }
 
@@ -30,6 +32,7 @@ let userVideoGame = prompt('Do I play Video Games?').toLocaleLowerCase();
 if (userVideoGame === 'yes' || userVideoGame === 'y'){
 //consol.log('yes, I do play Video Games!');
   alert('Yes, I do play Video Games!');
+  userCounter++;
 
 }
 
@@ -37,14 +40,16 @@ let userSoccer = prompt('Do I like to play Soccer?').toLocaleLowerCase();
 if (userSoccer === 'yes' || userSoccer === 'y'){
 console.log('Yes, I do play Soccer!');
 alert('Yes, I do play Soccer!');
-
+userCounter++;
 }
 
 let userCake = prompt('Do I like to eat cake?').toLocaleLowerCase();
 if (userCake === 'yes' || userCake === 'y'){
 //console.log('Yes, I love eating cake');
 alert('Yes, I love eating cake!');
+userCounter++;
 }
+
 
 //let userBye = prompt('Thanks for the visiting my Website.
 //alert('Thanks for the visiting my Website ' + userName); 
@@ -65,7 +70,8 @@ alert('Yes, I love eating cake!');
       }
       if(userAnswer === correctAnswer){
           alert('Correct!');
-          document.write("Winner!");
+          alert("Winner!");
+          userCounter++;
           break;
       }else if (userAnswer > correctAnswer){
           userAnswer = parseInt(prompt ('Too high! Please try again'))
@@ -76,44 +82,33 @@ alert('Yes, I love eating cake!');
       }
       if(i == 3){
           alert('The correct answer was ' + correctAnswer);
-          document.write("Game Loser")
+          alert("Game Loser")
+          
 
       }
   }        
      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  alert('Thanks for the visiting my Website ' + userName); 
+  let userQ7Guess = prompt('What is 1 factor of 48?');
+  let correctQuest = [1,2,3,4,6,8,12,16,24,48]
 
+for(let count = 5; count > 0; count--){
+    for(let i = 0; i < correctQuest.length; i++){
+        let guess = correctQuest[i];
+        if(userQ7Guess == guess){
+            alert('Correct!')
+            userCounter++;
+            count = 1;
+            break;
+        }
+
+
+
+    }
+
+
+
+
+}
+alert('Thank you for visiting my website ' +userName + 'Your score was ' +userCounter + '/7!')
 
 
