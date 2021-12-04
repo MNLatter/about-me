@@ -1,44 +1,10 @@
-* {
-background-color: lightcoral;
-}
+/* {
+background-color: rgb(0, 0, 0);
+}*/
 
-h1 {
-  font-size: 4em;
-  text-align: center;
-  background-color: lightpink;
-  padding: 1em;
-  width: 85%;
-  margin: auto;
-  margin-top: 50px;
-}
-footer {
-  text-align: right;
-}
-p {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-size: 3em;
-}
+figure {
+  width 700px;
+  background-color: burlywood;
 
-h2 {
-text-align: left;
-font-style: bold;
-font-size: 2em;
 
-}
-
-ul {
-  text-align: left;
-  font-style: oblique;
-}
-
-h3 {
-text-align: right;
-font-style: bold;
-
-}
-
-ol {
-  text-align: right;
-  font-style: oblique;
 }
