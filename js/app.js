@@ -22,7 +22,7 @@ function questionOne() {
 
     if (userAgeOne === 'yes' || userAgeOne === 'y') {
         //console.log('Yes, I am 25!');
-        alert('Yes, I am 25!')
+        alert('I am 25 years young!')
         userCounter++;
 
     }
@@ -34,7 +34,7 @@ function questionTwo() {
 
     if (userLocation === 'yes' || 'y') {
         //console.log('Yes, I do live in Vancouver!');
-        alert('Yes, I do live in Vancouver!');
+        alert('I sure do!');
         userCounter++;
 
     }
@@ -45,7 +45,7 @@ function questionThree() {
     let userVideoGame = prompt('Do I play Video Games?').toLocaleLowerCase();
     if (userVideoGame === 'yes' || userVideoGame === 'y') {
         //consol.log('yes, I do play Video Games!');
-        alert('Yes, I do play Video Games!');
+        alert('I do like to play Video Games!');
         userCounter++;
 
     }
@@ -53,10 +53,10 @@ function questionThree() {
 questionThree();
 
 function questionFour() {
-    let userSoccer = prompt('Do I like to play Soccer?').toLocaleLowerCase();
-    if (userSoccer === 'yes' || userSoccer === 'y') {
-        console.log('Yes, I do play Soccer!');
-        alert('Yes, I do play Soccer!');
+    let userSkate = prompt('Do I like to Skateboard?').toLocaleLowerCase();
+    if (userSkate === 'yes' || userSkate === 'y') {
+        console.log('Yes, I do like to Skateboard!');
+        alert('Green is for the Money, Yellow is for the Honey! Yes, I do like to Skateboard!');
         userCounter++;
     }
 
